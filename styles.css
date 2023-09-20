@@ -24,21 +24,30 @@ body {
   justify-content: center;
 }
 .card {
-  max-width: 600%;
+  max-width: 600px;
+  min-height: 300px;
   background-color: var(--DarkGrayishBlue);
   padding: 1rem;
+  padding-bottom: 3rem;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   text-align: center;
   position: relative;
 }
 
-.card h2{
-    color: var(--NeonGreen);
-    font-size: 16px;
+.card h2 {
+  color: var(--NeonGreen);
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
 }
-
+p.advice {
+  font-size: 28px;
+  line-height: 1.2;
+  color:  var(--LightCyan);
+}
 img {
   max-width: 100%;
 }
@@ -57,6 +66,10 @@ button {
   border: none;
   outline: none;
   background-color: var(--NeonGreen);
+  cursor: pointer;
+}
+button:hover{
+    box-shadow: 0px 1px 10px 5px var(--NeonGreen);
 }
 button img {
   width: 20px;
